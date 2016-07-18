@@ -59,15 +59,18 @@
     <link href="http://jazzysnail.github.io/2016/07/13/hello-blog/"/>
     <id>http://jazzysnail.github.io/2016/07/13/hello-blog/</id>
     <published>2016-07-13T13:48:04.000Z</published>
-    <updated>2016-07-18T14:49:09.475Z</updated>
+    <updated>2016-07-18T15:52:15.190Z</updated>
     
-    <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;依照惯例还是先来一个”hello world”。尝试着使用hexo建立了自己的blog，也许就开始写博文了罢，或许是笔记？心得？灵感？总之就是慢慢写点东西出来。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;博客目前部署在github上面，下面是地址，欢迎来看看。&lt;/p&gt;
-&lt;h3 id=&quot;两个地址&quot;&gt;&lt;a href=&quot;#两个地址&quot; class=&quot;headerlink&quot; title=&quot;两个地址&quot;&gt;&lt;/a&gt;两个地址&lt;/h3&gt;&lt;p&gt;github: &lt;a href=&quot;https://github.com/jazzysnail&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jazzysnail&lt;/a&gt;&lt;br&gt;blog: &lt;a href=&quot;http://jazzysnail.github.io/&quot;&gt;leon’s blog&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;依照惯例还是先来一个”hello world”。使用hexo建立了自己的blog，也许就开始写博文了罢，或许是笔记？心得？灵感？总之就是慢慢写点东西出来。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;博客目前部署在github上面，下面是地址，欢迎来看看。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github: &lt;a href=&quot;https://github.com/jazzysnail&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jazzysnail&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;blog: &lt;a href=&quot;http://jazzysnail.github.io/&quot;&gt;leon’s blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;依照惯例还是先来一个”hello world”。尝试着使用hexo建立了自己的blog，也许就开始写博文了罢，或许是笔记？心得？灵感？总之就是慢慢写点东西出来。&lt;br&gt;
+      &lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;依照惯例还是先来一个”hello world”。使用hexo建立了自己的blog，也许就开始写博文了罢，或许是笔记？心得？灵感？总之就是慢慢写点东西出来。&lt;br&gt;
     
     </summary>
     
