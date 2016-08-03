@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jazzysnail.github.io/"/>
-  <updated>2016-08-01T01:23:20.667Z</updated>
+  <updated>2016-08-03T05:43:59.246Z</updated>
   <id>http://jazzysnail.github.io/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>调戏v-logo</title>
+    <link href="http://jazzysnail.github.io/2016/08/03/play-vue-logo/"/>
+    <id>http://jazzysnail.github.io/2016/08/03/play-vue-logo/</id>
+    <published>2016-08-03T04:04:22.000Z</published>
+    <updated>2016-08-03T05:43:59.246Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oaul0t4t1.bkt.clouddn.com/imgs/v-logo.png&quot; alt=&quot;vue-logo&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;代码敲累了调戏一下&lt;code&gt;v-logo&lt;/code&gt;解解乏~ :-)&lt;/p&gt;
+&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    等有时间了，上！教！程！&lt;br&gt;&lt;/div&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oaul0t4t1.bkt.clouddn.com/imgs/v-logo.png&quot; alt=&quot;vue-logo&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="art" scheme="http://jazzysnail.github.io/tags/art/"/>
+    
+  </entry>
   
   <entry>
     <title>npm-rimraf</title>
@@ -137,8 +158,8 @@
   
   <entry>
     <title>关于闭包之我见</title>
-    <link href="http://jazzysnail.github.io/2016/07/18/%E5%85%B3%E4%BA%8E%E9%97%AD%E5%8C%85%E4%B9%8B%E6%88%91%E8%A7%81/"/>
-    <id>http://jazzysnail.github.io/2016/07/18/关于闭包之我见/</id>
+    <link href="http://jazzysnail.github.io/2016/07/18/My-understanding-on-closures/"/>
+    <id>http://jazzysnail.github.io/2016/07/18/My-understanding-on-closures/</id>
     <published>2016-07-18T13:48:04.000Z</published>
     <updated>2016-07-28T02:07:57.729Z</updated>
     
