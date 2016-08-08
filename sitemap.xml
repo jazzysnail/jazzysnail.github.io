@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jazzysnail.github.io/2016/07/13/hello-blog/</loc>
+    
+    <lastmod>2016-08-08T07:39:56.592Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/</loc>
     
-    <lastmod>2016-08-08T06:04:02.440Z</lastmod>
+    <lastmod>2016-08-08T07:39:15.968Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://jazzysnail.github.io/2016/07/18/My-understanding-on-closures/</loc>
     
     <lastmod>2016-07-28T02:07:57.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jazzysnail.github.io/2016/07/13/hello-blog/</loc>
-    
-    <lastmod>2016-07-18T15:52:15.190Z</lastmod>
     
   </url>
   

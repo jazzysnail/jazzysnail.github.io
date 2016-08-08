@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jazzysnail.github.io/"/>
-  <updated>2016-08-08T06:04:02.440Z</updated>
+  <updated>2016-08-08T07:39:15.968Z</updated>
   <id>http://jazzysnail.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/"/>
     <id>http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/</id>
     <published>2016-08-06T08:40:16.000Z</published>
-    <updated>2016-08-08T06:04:02.440Z</updated>
+    <updated>2016-08-08T07:39:15.968Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>“调戏”Vuelogo的教程来辣！</p>
@@ -233,7 +233,7 @@
     <link href="http://jazzysnail.github.io/2016/07/13/hello-blog/"/>
     <id>http://jazzysnail.github.io/2016/07/13/hello-blog/</id>
     <published>2016-07-13T13:48:04.000Z</published>
-    <updated>2016-07-18T15:52:15.190Z</updated>
+    <updated>2016-08-08T07:39:56.592Z</updated>
     
     <content type="html"><![CDATA[<p>&#160; &#160; &#160; &#160;依照惯例还是先来一个”hello world”。使用hexo建立了自己的blog，也许就开始写博文了罢，或许是笔记？心得？灵感？总之就是慢慢写点东西出来。<br><a id="more"></a><br>&#160; &#160; &#160; &#160;博客目前部署在github上面，下面是地址，欢迎来看看。</p>
 <ul>
@@ -248,8 +248,6 @@
     
     </summary>
     
-    
-      <category term="closure" scheme="http://jazzysnail.github.io/tags/closure/"/>
     
   </entry>
   
