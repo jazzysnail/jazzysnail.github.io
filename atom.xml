@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jazzysnail.github.io/"/>
-  <updated>2016-08-03T05:43:59.246Z</updated>
+  <updated>2016-08-08T06:04:02.440Z</updated>
   <id>http://jazzysnail.github.io/</id>
   
   <author>
@@ -16,23 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>调戏v-logo</title>
-    <link href="http://jazzysnail.github.io/2016/08/03/play-vue-logo/"/>
-    <id>http://jazzysnail.github.io/2016/08/03/play-vue-logo/</id>
-    <published>2016-08-03T04:04:22.000Z</published>
-    <updated>2016-08-03T05:43:59.246Z</updated>
+    <title>调戏Vuelogo的正确姿势</title>
+    <link href="http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/"/>
+    <id>http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/</id>
+    <published>2016-08-06T08:40:16.000Z</published>
+    <updated>2016-08-08T06:04:02.440Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://oaul0t4t1.bkt.clouddn.com/imgs/v-logo.png" alt="vue-logo"><br><a id="more"></a><br>代码敲累了调戏一下<code>v-logo</code>解解乏~ :-)</p>
-<div class="tip"><br>    等有时间了，上！教！程！<br></div>]]></content>
+    <content type="html"><![CDATA[<blockquote>
+<p>“调戏”Vuelogo的教程来辣！</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="http://oaul0t4t1.bkt.clouddn.com/imgs%E8%B0%83%E6%88%8Fvue%E6%95%99%E7%A8%8B.png" alt=""></p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://oaul0t4t1.bkt.clouddn.com/imgs/v-logo.png&quot; alt=&quot;vue-logo&quot;&gt;&lt;br&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;“调戏”Vuelogo的教程来辣！&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
     
+      <category term="vue" scheme="http://jazzysnail.github.io/tags/vue/"/>
+    
       <category term="art" scheme="http://jazzysnail.github.io/tags/art/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>调戏v-logo</title>
+    <link href="http://jazzysnail.github.io/2016/08/03/play-vue-logo/"/>
+    <id>http://jazzysnail.github.io/2016/08/03/play-vue-logo/</id>
+    <published>2016-08-03T04:04:22.000Z</published>
+    <updated>2016-08-08T00:33:42.058Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h4 id="有光影层次"><a href="#有光影层次" class="headerlink" title="有光影层次"></a>有光影层次</h4><p><img src="http://oaul0t4t1.bkt.clouddn.com/imgsv-logo-shadow.png" alt="vue-logo"><br><a id="more"></a></p>
+<h4 id="无光影层次"><a href="#无光影层次" class="headerlink" title="无光影层次"></a>无光影层次</h4><p><img src="http://oaul0t4t1.bkt.clouddn.com/imgs/v-logo.png" alt="vue-logo"></p>
+<p>代码敲累了调戏一下<code>v-logo</code>解解乏~ :-)</p>
+<div class="tip"><br>    等有时间了，上！教！程！<br></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;h4 id=&quot;有光影层次&quot;&gt;&lt;a href=&quot;#有光影层次&quot; class=&quot;headerlink&quot; title=&quot;有光影层次&quot;&gt;&lt;/a&gt;有光影层次&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://oaul0t4t1.bkt.clouddn.com/imgsv-logo-shadow.png&quot; alt=&quot;vue-logo&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://jazzysnail.github.io/tags/vue/"/>
+    
+      <category term="ART" scheme="http://jazzysnail.github.io/tags/ART/"/>
     
   </entry>
   
