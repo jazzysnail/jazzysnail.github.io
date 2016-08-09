@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jazzysnail.github.io/"/>
-  <updated>2016-08-08T07:39:15.968Z</updated>
+  <updated>2016-08-09T08:44:45.486Z</updated>
   <id>http://jazzysnail.github.io/</id>
   
   <author>
@@ -16,11 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>not defined和undefined和Null到底谁是异教徒？</title>
+    <link href="http://jazzysnail.github.io/2016/08/08/not-defined&amp;undefined/"/>
+    <id>http://jazzysnail.github.io/2016/08/08/not-defined&amp;undefined/</id>
+    <published>2016-08-08T11:29:52.000Z</published>
+    <updated>2016-08-09T08:44:45.486Z</updated>
+    
+    <content type="html"><![CDATA[<p>又一个需求完结了，最近好“闲”！总结一个好玩的东西，那就是<code>not defined</code> 和 <code>undefined</code> 以及<code>Null</code>这三兄弟。这三兄弟简直了，一个不小心就要出问题。</p>
+<p>别看这三兄弟不仅长的像而且意思也真是TM的“像”，可是他们之间还有很大的区别的。<br><a id="more"></a></p>
+<div class="tip"><br>    下面代码建议<code>f12</code>在控制台运行一下<br></div>
+
+<h2 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h2><blockquote>
+<p><code>undefined</code>类型只有一个值，即特殊的<code>undefined</code>。在使用var声明变量但未对其加以初始化时，这个变量的值就是<code>undefined</code>。</p>
+</blockquote>
+<p>熟悉么？没错就 <strong>js高程</strong> 的原话。讲道理读书还是重要，有些时候遇到问题快速解决可以google或是寻找技术博客什么的，实践很重要理论做支撑，需求完结后回到理论深究一下，才能真正的提高，所谓知其然知其所以然~又TMD扯远了。</p>
+<p>上面这段什么意思呢？就是说这个变量不是没有（未定义）而是没有初始化。听说马上七夕，讲个笑话，你有一天闲得蛋疼，在给未来的孩子取名字，好不容易想到一个好的，然而你连女朋友的没有。不要打我！来人护驾！</p>
+<h2 id="not-defined"><a href="#not-defined" class="headerlink" title="not defined"></a>not defined</h2><p>别看他和<code>undefined</code>长的挺像，就以为他们是失散多年的亲兄弟，其实不然，数据类型大家族之中根本就没有他，他只是浏览器经常报的一个错误信息而已。<br>当我们看到<code>VM316:1 Uncaught ReferenceError: XXX is not defined(…)</code>的时候其实就意味着这个叫“XXX”的家伙根本就不存在（未定义）。浏览器的意思是“您拨打的号码有误，请核实后再拨”。</p>
+<h2 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h2><p>哇~这个就厉害了。从逻辑上讲<code>Null</code>表示是一个空对象指针(也就是对象的名字用于存放地址)。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj1 =&#123;&#125;;</div><div class="line"><span class="keyword">var</span> obj2 = <span class="literal">null</span>;</div><div class="line"><span class="keyword">var</span> var1 = <span class="literal">undefined</span>;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(obj1)); <span class="comment">// 返回object</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(obj2)); <span class="comment">// 返回object</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(var1)); <span class="comment">// 返回undefined</span></div></pre></td></tr></table></figure></p>
+<p>这个东西不是很好解释，就好比是物理老师告诉你，1.0和1是不一样的，考试的时候要是精确两位小数你答个1，就尴尬了。他们可以一样也可以不一样(严格意义上不一样)，<code>Null</code>是对象指针本身也是个对象，在内存中其实就是未来要存个地址但是还没想好要存哪个地址而已（多个变量可以指向同一个对象）。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> pointerA = <span class="literal">null</span>;</div><div class="line"><span class="keyword">var</span> var2 = <span class="literal">undefined</span>;</div><div class="line"><span class="keyword">var</span> objA = &#123;</div><div class="line">    biu:<span class="string">"biu~biu~biu~"</span></div><div class="line">&#125;;</div><div class="line">pointerA = objA;</div><div class="line">var2 = pointerA;</div><div class="line">objA.heheda = <span class="string">"heheda"</span>;</div><div class="line"><span class="built_in">console</span>.log(pointerA === objA); <span class="comment">// 返回true （同一个地址引用）</span></div><div class="line"><span class="built_in">console</span>.log(var2 === objA); <span class="comment">// 返回true （同一个地址引用,undefined派生于null）</span></div></pre></td></tr></table></figure></p>
+<p>但是<code>undefined</code>他可就不是对象指针了，如果存实际的数据，可就真的存进去了。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> variableA = <span class="literal">undefined</span>;</div><div class="line"><span class="keyword">var</span> variableB = <span class="number">3</span>;</div><div class="line">variableA = variableB;</div><div class="line">variableB = <span class="number">4</span>;</div><div class="line"><span class="built_in">console</span>.log(variableA === variableB); <span class="comment">// 返回false （不同的地址引用）</span></div></pre></td></tr></table></figure></p>
+<p>但是！他们在技术角度有TM的一样了，<code>undefined</code>派生于<code>null</code>并且都广义上代表“没有”：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">undefined</span> == <span class="literal">null</span>) <span class="comment">// 返回true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="literal">undefined</span> === <span class="literal">null</span>) <span class="comment">// 返回false</span></div></pre></td></tr></table></figure></p>
+<p>所以说<code>null</code>才是<code>undefined</code> 多年未见的亲哥哥呀。</p>
+<h2 id="null-amp-undefined-VS-not-defined"><a href="#null-amp-undefined-VS-not-defined" class="headerlink" title="null&amp;undefined VS not defined"></a>null&amp;undefined VS not defined</h2><p>好的他们三个的关系已经清楚了，只有<code>not defined</code>不是自家兄弟。对于这样的异教徒我们要怎么办？<br>假如有后端跟你对接口时说，当这个属性没有的时候他就真的没有了(<code>not defined</code>)！难道你还傻傻的：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (shashade.attr2) &#123; <span class="comment">// 此时已然报错</span></div><div class="line">    <span class="keyword">return</span> <span class="built_in">console</span>.log(shashade.attr2);</div><div class="line">&#125;<span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">// 执行为空操作</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这样写过的同学举一下手~<br>那么要怎么办呢？<code>typeof</code>笑而不语。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    attr1:<span class="string">"attr1"</span></div><div class="line">&#125;</div><div class="line">test(obj);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">busha</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span>(busha.attr2) == <span class="literal">null</span>) &#123; <span class="comment">// 不会报错</span></div><div class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(busha.attr2);</div><div class="line">    &#125;<span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(<span class="string">"为空操作已执行！"</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<div class="tip"><br>    使用<code>typeof()</code>方法来判断处理为空的情况最为安全~<br></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;又一个需求完结了，最近好“闲”！总结一个好玩的东西，那就是&lt;code&gt;not defined&lt;/code&gt; 和 &lt;code&gt;undefined&lt;/code&gt; 以及&lt;code&gt;Null&lt;/code&gt;这三兄弟。这三兄弟简直了，一个不小心就要出问题。&lt;/p&gt;
+&lt;p&gt;别看这三兄弟不仅长的像而且意思也真是TM的“像”，可是他们之间还有很大的区别的。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://jazzysnail.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>调戏Vuelogo的正确姿势</title>
     <link href="http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/"/>
     <id>http://jazzysnail.github.io/2016/08/06/course-play-vue-logo/</id>
     <published>2016-08-06T08:40:16.000Z</published>
-    <updated>2016-08-08T07:39:15.968Z</updated>
+    <updated>2016-08-08T08:05:55.150Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>“调戏”Vuelogo的教程来辣！</p>
@@ -49,7 +87,7 @@
     <link href="http://jazzysnail.github.io/2016/08/03/play-vue-logo/"/>
     <id>http://jazzysnail.github.io/2016/08/03/play-vue-logo/</id>
     <published>2016-08-03T04:04:22.000Z</published>
-    <updated>2016-08-08T00:33:42.058Z</updated>
+    <updated>2016-08-09T08:44:45.489Z</updated>
     
     <content type="html"><![CDATA[<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h4 id="有光影层次"><a href="#有光影层次" class="headerlink" title="有光影层次"></a>有光影层次</h4><p><img src="http://oaul0t4t1.bkt.clouddn.com/imgsv-logo-shadow.png" alt="vue-logo"><br><a id="more"></a></p>
 <h4 id="无光影层次"><a href="#无光影层次" class="headerlink" title="无光影层次"></a>无光影层次</h4><p><img src="http://oaul0t4t1.bkt.clouddn.com/imgs/v-logo.png" alt="vue-logo"></p>
@@ -65,7 +103,7 @@
     
       <category term="vue" scheme="http://jazzysnail.github.io/tags/vue/"/>
     
-      <category term="ART" scheme="http://jazzysnail.github.io/tags/ART/"/>
+      <category term="art" scheme="http://jazzysnail.github.io/tags/art/"/>
     
   </entry>
   
@@ -152,11 +190,11 @@
   </entry>
   
   <entry>
-    <title>初识vue</title>
-    <link href="http://jazzysnail.github.io/2016/07/20/vue%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83%EF%BC%9F/"/>
-    <id>http://jazzysnail.github.io/2016/07/20/vue从入门到放弃？/</id>
+    <title>vue从入门到放弃？</title>
+    <link href="http://jazzysnail.github.io/2016/07/20/hello-vue/"/>
+    <id>http://jazzysnail.github.io/2016/07/20/hello-vue/</id>
     <published>2016-07-20T03:05:33.000Z</published>
-    <updated>2016-07-28T02:29:19.227Z</updated>
+    <updated>2016-08-09T08:44:45.481Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>架构是对客观不足的妥协，规范是对主观不足的妥协。</p>
@@ -194,7 +232,7 @@
     <link href="http://jazzysnail.github.io/2016/07/18/My-understanding-on-closures/"/>
     <id>http://jazzysnail.github.io/2016/07/18/My-understanding-on-closures/</id>
     <published>2016-07-18T13:48:04.000Z</published>
-    <updated>2016-07-28T02:07:57.729Z</updated>
+    <updated>2016-08-09T08:44:45.478Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><a href="http://baike.baidu.com/view/648413.htm#4" target="_blank" rel="external">闭包</a>是一个拥有许多变量和绑定了这些变量的环境的表达式（通常是一个函数），因而这些变量也是该表达式的一部分。</p>
@@ -224,6 +262,8 @@
     </summary>
     
     
+      <category term="javascript" scheme="http://jazzysnail.github.io/tags/javascript/"/>
+    
       <category term="closure" scheme="http://jazzysnail.github.io/tags/closure/"/>
     
   </entry>
@@ -233,7 +273,7 @@
     <link href="http://jazzysnail.github.io/2016/07/13/hello-blog/"/>
     <id>http://jazzysnail.github.io/2016/07/13/hello-blog/</id>
     <published>2016-07-13T13:48:04.000Z</published>
-    <updated>2016-08-08T07:39:56.592Z</updated>
+    <updated>2016-08-08T08:05:55.153Z</updated>
     
     <content type="html"><![CDATA[<p>&#160; &#160; &#160; &#160;依照惯例还是先来一个”hello world”。使用hexo建立了自己的blog，也许就开始写博文了罢，或许是笔记？心得？灵感？总之就是慢慢写点东西出来。<br><a id="more"></a><br>&#160; &#160; &#160; &#160;博客目前部署在github上面，下面是地址，欢迎来看看。</p>
 <ul>
